@@ -469,11 +469,6 @@
               <FileType>1</FileType>
               <FilePath>.\driver\eMPL\inv_mpu_dmp_motion_driver.c</FilePath>
             </File>
-            <File>
-              <FileName>inv_mpu_hal_lpc81x.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\inv_mpu_hal_lpc81x.h</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>

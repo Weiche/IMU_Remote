@@ -1,4 +1,4 @@
-;#<FEEDBACK># ARM Linker, 5040049: Last Updated: Fri Feb 13 13:37:47 2015
+;#<FEEDBACK># ARM Linker, 5040049: Last Updated: Fri Feb 13 14:28:11 2015
 ;VERSION 0.2
 ;FILE driver_i2c_lpc81x.o
 __asm___19_Driver_I2C_LPC81x_c_cfa28fec____REV16 <= USED 0
@@ -54,6 +54,7 @@ sleep <= USED 0
 __asm___15_lpc8xx_pinint_c_2ac374a1____REV16 <= USED 0
 __asm___15_lpc8xx_pinint_c_2ac374a1____REVSH <= USED 0
 ;FILE main.o
+Radio_ConnectionCheck <= USED 0
 __asm___6_main_c_252bdb84____REV16 <= USED 0
 __asm___6_main_c_252bdb84____REVSH <= USED 0
 ;FILE mpu6050.o

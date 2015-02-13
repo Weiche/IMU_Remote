@@ -25,6 +25,7 @@ extern struct AHRP_Data{
 
 void MPU6050_Task(void);
 void NRF24_CheckStatus(void);
+int Radio_ConnectionCheck( void );
 
 volatile uint32_t __System_Tick = 0;
 volatile uint8_t MPU6050_Ready = 0;
@@ -54,10 +55,12 @@ xsprintf((char*)NRF24_TX_Buffer,msg);\
 NRF24_SendPacket(&nrf24,NRF24_TX_Buffer,PACKET_LENGTH,0);\
 NRF24_CE_Enable();\
 while(( NRF24_Read_Reg(STATUS)&STATUS_TX_DS) == 0);\
-NRF24_CE_Disable()	
+NRF24_CE_Disable()
+
 #define WDT_FEED()	\
 LPC_WWDT->FEED = 0xAA;\
 LPC_WWDT->FEED = 0x55
+
 
 int main(void){
 	int packet_num = 0;	
@@ -107,6 +110,7 @@ int main(void){
 		WDT_FEED();
 		NRF24_CheckStatus();
 		deepsleep();
+		
 		if( MPU6050_Ready ){
 			MPU6050_Task();
 			if( ( NRF24_Read_Reg(FIFO_STATUS)&(1<<4) )){//if TX fifo empty
@@ -120,7 +124,9 @@ int main(void){
 				while(( NRF24_Read_Reg(STATUS)&STATUS_TX_DS) == 0);
 				NRF24_CE_Disable();				
 			}
-		}		
+		}	
+		
+		
 	}
 }
 
@@ -163,7 +169,30 @@ void NRF24_CheckStatus(void){
 		NRF24_CE_Enable();
 	}
 }
-
+/* Check parent */
+int Radio_ConnectionCheck( void ){
+	int ret;
+	uint8_t byte_status;
+	
+	xsprintf((char*)NRF24_TX_Buffer,"CHECK\n");
+	/* Send a packet request ack */
+	NRF24_SendPacket(&nrf24,NRF24_TX_Buffer,PACKET_LENGTH,0);
+	NRF24_CE_Enable();
+	while(1){
+		byte_status = NRF24_Read_Reg(STATUS);
+		if( byte_status & STATUS_TX_DS ){			
+			ret = 0;
+			break;
+		}else if ( byte_status & STATUS_MAX_RT ){
+			ret = 1;
+			break;
+		}
+	}
+	NRF24_CE_Disable();
+	NRF24_Write_Reg(STATUS,STATUS_TX_DS|STATUS_MAX_RT);
+	return ret;
+}
+/* Interrupt handlers */
 void PININT0_IRQHandler (void){
 	LPC_PIN_INT->IST |= (1<<0);
 	MPU6050_Ready = 1;
