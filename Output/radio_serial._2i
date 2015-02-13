@@ -1,0 +1,5 @@
+--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork -I..\lpc800_driver_lib\inc -I..\LPC812_MPU6050 -I.\driver\eMPL -I..\xprintf -I.\driver\NRF24L01P -I.\Include
+-I M:\Projects\LPC812_MPU6050\RTE
+-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include
+-I C:\Keil_v5\ARM\PACK\Keil\LPC800_DFP\1.0.1\Device\Include
+-D_RTE_ -DLPC812D -DMPU6050 -DEMPL_LPC812 -DNRF24_HAL_LPC8xx -o .\output\radio_serial.o --omf_browse .\output\radio_serial.crf --depend .\output\radio_serial.d --feedback ".\Output\lpc812_mpu6050.fed" "user\radio_serial.c"

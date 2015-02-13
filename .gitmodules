@@ -1,0 +1,3 @@
+[submodule "driver/NRF24L01P"]
+	path = driver/NRF24L01P
+	url = https://github.com/Weiche/NRF24L01P.git

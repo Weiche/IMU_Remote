@@ -1,0 +1,15 @@
+.\output\inv_mpu.o: driver\eMPL\inv_mpu.c
+.\output\inv_mpu.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
+.\output\inv_mpu.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\output\inv_mpu.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h
+.\output\inv_mpu.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\string.h
+.\output\inv_mpu.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\math.h
+.\output\inv_mpu.o: driver\eMPL\inv_mpu.h
+.\output\inv_mpu.o: .\Include\inv_mpu_hal_lpc81x.h
+.\output\inv_mpu.o: ..\LPC812_MPU6050\driver/Driver_I2C_LPC81x.h
+.\output\inv_mpu.o: C:\Keil_v5\ARM\PACK\Keil\LPC800_DFP\1.0.1\Device\Include\lpc8xx.h
+.\output\inv_mpu.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0plus.h
+.\output\inv_mpu.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h
+.\output\inv_mpu.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h
+.\output\inv_mpu.o: C:\Keil_v5\ARM\PACK\Keil\LPC800_DFP\1.0.1\Device\Include\system_LPC8xx.h
+.\output\inv_mpu.o: ..\lpc800_driver_lib\inc\lpc8xx_i2c.h

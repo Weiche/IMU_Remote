@@ -1,0 +1,20 @@
+--cpu Cortex-M0+
+".\output\xprintf.o"
+".\output\lpc8xx_pinint.o"
+".\output\low_power.o"
+".\output\main.o"
+".\output\mpu6050.o"
+".\output\pin_setting.o"
+".\output\radio_serial.o"
+".\output\driver_i2c_lpc81x.o"
+".\output\inv_mpu.o"
+".\output\inv_mpu_dmp_motion_driver.o"
+".\output\nrf24l01.o"
+".\output\nrf24l01_hal_lpc810.o"
+".\output\startup_lpc8xx.o"
+".\output\system_lpc8xx.o"
+--library_type=microlib
+--feedback ".\Output\lpc812_mpu6050.fed" --feedback_image=none
+--strict --scatter ".\Output\lpc812_mpu6050.sct"
+--summary_stderr --info summarysizes --info sizes --info totals
+--list ".\lpc812_mpu6050.map" -o .\Output\lpc812_mpu6050.axf

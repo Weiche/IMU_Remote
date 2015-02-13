@@ -1,0 +1,17 @@
+.\output\main.o: user\main.c
+.\output\main.o: C:\Keil_v5\ARM\PACK\Keil\LPC800_DFP\1.0.1\Device\Include\lpc8xx.h
+.\output\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0plus.h
+.\output\main.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\output\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h
+.\output\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h
+.\output\main.o: C:\Keil_v5\ARM\PACK\Keil\LPC800_DFP\1.0.1\Device\Include\system_LPC8xx.h
+.\output\main.o: .\driver\eMPL\inv_mpu.h
+.\output\main.o: .\driver\eMPL\inv_mpu_dmp_motion_driver.h
+.\output\main.o: .\Include\inv_mpu_hal_lpc81x.h
+.\output\main.o: ..\LPC812_MPU6050\driver/Driver_I2C_LPC81x.h
+.\output\main.o: ..\lpc800_driver_lib\inc\lpc8xx_i2c.h
+.\output\main.o: ..\LPC812_MPU6050\Include/lpc8xx_extend.h
+.\output\main.o: .\driver\NRF24L01P\nrf24l01.h
+.\output\main.o: .\driver\NRF24L01P\nrf24l01_hal.h
+.\output\main.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
+.\output\main.o: ..\xprintf\xprintf.h

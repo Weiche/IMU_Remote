@@ -1,0 +1,9 @@
+.\output\nrf24l01_hal_lpc810.o: driver\NRF24L01P\hal\nrf24l01_hal_lpc810.c
+.\output\nrf24l01_hal_lpc810.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\output\nrf24l01_hal_lpc810.o: .\Include\nrf24_config.h
+.\output\nrf24l01_hal_lpc810.o: C:\Keil_v5\ARM\PACK\Keil\LPC800_DFP\1.0.1\Device\Include\lpc8xx.h
+.\output\nrf24l01_hal_lpc810.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0plus.h
+.\output\nrf24l01_hal_lpc810.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h
+.\output\nrf24l01_hal_lpc810.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h
+.\output\nrf24l01_hal_lpc810.o: C:\Keil_v5\ARM\PACK\Keil\LPC800_DFP\1.0.1\Device\Include\system_LPC8xx.h
+.\output\nrf24l01_hal_lpc810.o: ..\lpc800_driver_lib\inc\lpc8xx_spi.h

@@ -1,0 +1,92 @@
+;#<FEEDBACK># ARM Linker, 5040049: Last Updated: Fri Feb 13 12:04:42 2015
+;VERSION 0.2
+;FILE driver_i2c_lpc81x.o
+__asm___19_Driver_I2C_LPC81x_c_cfa28fec____REV16 <= USED 0
+__asm___19_Driver_I2C_LPC81x_c_cfa28fec____REVSH <= USED 0
+;FILE inv_mpu.o
+__asm___9_inv_mpu_c_reg____REV16 <= USED 0
+__asm___9_inv_mpu_c_reg____REVSH <= USED 0
+mpu_get_accel_reg <= USED 0
+mpu_get_accel_sens <= USED 0
+mpu_get_compass_fsr <= USED 0
+mpu_get_compass_reg <= USED 0
+mpu_get_compass_sample_rate <= USED 0
+mpu_get_dmp_state <= USED 0
+mpu_get_fifo_config <= USED 0
+mpu_get_gyro_reg <= USED 0
+mpu_get_gyro_sens <= USED 0
+mpu_get_int_status <= USED 0
+mpu_get_lpf <= USED 0
+mpu_get_power_state <= USED 0
+mpu_get_temperature <= USED 0
+mpu_lp_motion_interrupt <= USED 0
+mpu_read_6050_accel_bias <= USED 0
+mpu_read_6500_accel_bias <= USED 0
+mpu_read_6500_gyro_bias <= USED 0
+mpu_read_fifo <= USED 0
+mpu_read_reg <= USED 0
+mpu_reg_dump <= USED 0
+mpu_run_self_test <= USED 0
+mpu_set_accel_bias_6050_reg <= USED 0
+mpu_set_accel_bias_6500_reg <= USED 0
+mpu_set_compass_sample_rate <= USED 0
+mpu_set_gyro_bias_reg <= USED 0
+mpu_set_int_level <= USED 0
+;FILE inv_mpu_dmp_motion_driver.o
+__ARM_common_ll_mulss <= USED 0
+__asm___27_inv_mpu_dmp_motion_driver_c_9888ba14____REV16 <= USED 0
+__asm___27_inv_mpu_dmp_motion_driver_c_9888ba14____REVSH <= USED 0
+dmp_get_enabled_features <= USED 0
+dmp_get_fifo_rate <= USED 0
+dmp_get_pedometer_step_count <= USED 0
+dmp_get_pedometer_walk_time <= USED 0
+dmp_register_android_orient_cb <= USED 0
+dmp_set_accel_bias <= USED 0
+dmp_set_gyro_bias <= USED 0
+dmp_set_orientation <= USED 0
+dmp_set_pedometer_step_count <= USED 0
+dmp_set_pedometer_walk_time <= USED 0
+;FILE low_power.o
+__asm___11_low_power_c_sleep____REV16 <= USED 0
+__asm___11_low_power_c_sleep____REVSH <= USED 0
+sleep <= USED 0
+;FILE lpc8xx_pinint.o
+__asm___15_lpc8xx_pinint_c_2ac374a1____REV16 <= USED 0
+__asm___15_lpc8xx_pinint_c_2ac374a1____REVSH <= USED 0
+;FILE main.o
+__asm___6_main_c_252bdb84____REV16 <= USED 0
+__asm___6_main_c_252bdb84____REVSH <= USED 0
+;FILE mpu6050.o
+__asm___9_mpu6050_c_a8f63ff3____REV16 <= USED 0
+__asm___9_mpu6050_c_a8f63ff3____REVSH <= USED 0
+;FILE nrf24l01.o
+NRF24_Dump <= USED 0
+NRF24_Get_RX_Addr <= USED 0
+NRF24_Get_TX_Addr <= USED 0
+NRF24_RXFIFO_Read <= USED 0
+NRF24_Receive <= USED 0
+NRF24_Reg_SetBit <= USED 0
+NRF24_ScanChannels <= USED 0
+;FILE nrf24l01_hal_lpc810.o
+__asm___21_nrf24l01_hal_lpc810_c_80e2f1a9____REV16 <= USED 0
+__asm___21_nrf24l01_hal_lpc810_c_80e2f1a9____REVSH <= USED 0
+;FILE pin_setting.o
+__asm___13_pin_setting_c_ccc8aa2c____REV16 <= USED 0
+__asm___13_pin_setting_c_ccc8aa2c____REVSH <= USED 0
+;FILE radio_serial.o
+UART0_Init <= USED 0
+__asm___14_radio_serial_c_4cfcc0c0____REV16 <= USED 0
+__asm___14_radio_serial_c_4cfcc0c0____REVSH <= USED 0
+;FILE startup_lpc8xx.o
+;FILE system_lpc8xx.o
+SystemCoreClockUpdate <= USED 0
+__asm___15_system_LPC8xx_c_5d646a67____REV16 <= USED 0
+__asm___15_system_LPC8xx_c_5d646a67____REVSH <= USED 0
+;FILE xprintf.o
+put_dump <= USED 0
+xatoi <= USED 0
+xfgets <= USED 0
+xfprintf <= USED 0
+xfputs <= USED 0
+xgets <= USED 0
+xprintf <= USED 0
