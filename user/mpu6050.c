@@ -128,24 +128,26 @@ int MPU6050_DataProcess(void){
 	unsigned long sensor_timestamp;
 	float fquat[4];
 	result = dmp_read_fifo(gyro, accel, quat, &sensor_timestamp, &sensors,&more);
-		if(result==0){
-			fquat[0] = quat[1] / 1073741823.0;
-			fquat[1] = quat[2] / 1073741823.0;
-			fquat[2] = quat[3] / 1073741823.0;
-			fquat[3] = quat[0] / 1073741823.0;
-			
-			IMU_out.pitch = Quaternion_getPitch(fquat);
-			IMU_out.roll = Quaternion_getRoll(fquat);
-			IMU_out.yaw = Quaternion_getYaw(fquat);
-			IMU_out.statu = 0;
+	if(result==0){
+		
+		/* Heavy soft float point calculation */
+		fquat[0] = quat[1] / 1073741823.0;
+		fquat[1] = quat[2] / 1073741823.0;
+		fquat[2] = quat[3] / 1073741823.0;
+		fquat[3] = quat[0] / 1073741823.0;		
+		
+		IMU_out.pitch = Quaternion_getPitch(fquat);
+		IMU_out.roll = Quaternion_getRoll(fquat);
+		IMU_out.yaw = Quaternion_getYaw(fquat);
+		IMU_out.statu = 0;
 
-			return 0;
-		}else{
-			IMU_out.pitch = 0.0F;
-			IMU_out.roll = 0.0F;
-			IMU_out.yaw = 0.0F;
-			IMU_out.statu = -1;
-			return -1;
-		}
+		return 0;
+	}else{
+		IMU_out.pitch = 0.0F;
+		IMU_out.roll = 0.0F;
+		IMU_out.yaw = 0.0F;
+		IMU_out.statu = -1;
+		return -1;
+	}
 
 }
